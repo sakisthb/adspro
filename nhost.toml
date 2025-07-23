@@ -1,0 +1,11 @@
+[build]
+command = "npm run build"
+publish = ".next"
+
+[functions]
+[functions.default]
+code = "nhost/functions/default"
+
+[deploy]
+subdomain = "kxcevmeaguflcpdyxnsl"
+region = "eu-central-1" 

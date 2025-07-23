@@ -1,0 +1,13 @@
+[cloud]
+pat = 'fd0ad77b-f415-4545-a6ff-132a69f46cfb'
+enable_mutations = true
+
+[local]
+admin_secret = '$@123#@!aQ111'
+
+[[projects]]
+subdomain = 'kxcevmeaguflcpdyxnsl'
+region = 'eu-central-1'
+admin_secret = '$@123#@!aQ111'
+allow_queries = ['*']
+allow_mutations = ['*'] 

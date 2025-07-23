@@ -1,0 +1,51 @@
+# Cursor Rules for Nhost.io Project
+
+## Project Overview
+This is a Next.js application connected to Nhost.io backend services including:
+- PostgreSQL database with Hasura GraphQL
+- Authentication system
+- File storage
+- Serverless functions
+
+## MCP Server Configuration
+The project uses Nhost MCP server for AI assistance. Configuration:
+- Personal Access Token: fd0ad77b-f415-4545-a6ff-132a69f46cfb
+- Admin Secret: $@123#@!aQ111
+- Project ID: kxcevmeaguflcpdyxnsl
+- Region: eu-central-1
+
+## Development Guidelines
+- Use TypeScript for all new files
+- Follow Next.js 13+ App Router patterns
+- Use Tailwind CSS for styling
+- Implement proper error handling
+- Use Nhost SDK for backend interactions
+
+## Database Schema
+When creating database tables, consider:
+- Proper relationships between tables
+- Indexing for performance
+- Row Level Security (RLS) policies
+- GraphQL schema generation
+
+## Authentication
+- Implement user registration/login
+- Add social login providers
+- Set up role-based permissions
+- Use Nhost auth hooks
+
+## File Structure
+```
+src/
+├── app/           # Next.js App Router
+├── components/    # React components
+├── lib/          # Utility functions
+└── types/        # TypeScript types
+```
+
+## Nhost Services
+- Database: PostgreSQL with Hasura
+- Auth: Built-in authentication
+- Storage: File storage with CDN
+- Functions: Serverless functions
+- GraphQL: Auto-generated API 

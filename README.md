@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Nhost.io Project
 
-## Getting Started
+A modern Next.js application connected to Nhost.io for backend services.
 
-First, run the development server:
+## ✨ Features
+
+- **🔐 Authentication** - Built-in user authentication with social logins
+- **🗄️ Database** - PostgreSQL database with real-time subscriptions
+- **📁 Storage** - File storage with CDN and image transformations
+- **⚡ Functions** - Serverless functions for custom business logic
+- **🔍 GraphQL** - Auto-generated GraphQL API with Hasura
+- **🌐 Hosting** - Automatic deployments and global CDN
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js 15, TypeScript, Tailwind CSS
+- **Backend**: Nhost.io (PostgreSQL, Hasura, Auth, Storage, Functions)
+- **Deployment**: Nhost.io hosting
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+- Nhost CLI (`npm install -g nhost`)
+
+### Local Development
+
+1. **Clone and install dependencies:**
+   ```bash
+   git clone <your-repo>
+   cd nhost.io-adspro
+   npm install
+   ```
+
+2. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open your browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 🌐 Deployment to Nhost.io
+
+### 1. Build the Application
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Deploy to Nhost
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Login to Nhost (if not already logged in)
+nhost login
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Deploy to your project
+nhost deploy
+```
 
-## Learn More
+### 3. View Your Live Application
 
-To learn more about Next.js, take a look at the following resources:
+Your application will be available at:
+`https://kxcevmeaguflcpdyxnsl.eu-central-1.nhost.run`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+nhost.io-adspro/
+├── src/
+│   ├── app/                 # Next.js App Router
+│   │   ├── layout.tsx      # Root layout with Nhost provider
+│   │   └── page.tsx        # Main page component
+│   ├── components/         # React components
+│   │   └── NhostProvider.tsx
+│   └── lib/               # Utility libraries
+│       └── nhost.ts       # Nhost client configuration
+├── nhost.config.ts        # Nhost deployment configuration
+├── nhost.toml            # Nhost project settings
+└── package.json
+```
 
-## Deploy on Vercel
+## 🔧 Configuration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Nhost Configuration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The project is configured to connect to your Nhost project:
+- **Project ID**: `kxcevmeaguflcpdyxnsl`
+- **Region**: `eu-central-1`
+
+### Environment Variables
+
+Create a `.env.local` file for local development:
+
+```env
+NEXT_PUBLIC_NHOST_SUBDOMAIN=kxcevmeaguflcpdyxnsl
+NEXT_PUBLIC_NHOST_REGION=eu-central-1
+```
+
+## 📚 Useful Links
+
+- **Nhost Dashboard**: [https://app.nhost.io/orgs/waupbahqvcxvbzixkydr/projects/kxcevmeaguflcpdyxnsl](https://app.nhost.io/orgs/waupbahqvcxvbzixkydr/projects/kxcevmeaguflcpdyxnsl)
+- **Nhost Documentation**: [https://docs.nhost.io/](https://docs.nhost.io/)
+- **Next.js Documentation**: [https://nextjs.org/docs](https://nextjs.org/docs)
+
+## 🎯 Next Steps
+
+1. **Set up Authentication**: Configure user sign-up and login
+2. **Create Database Schema**: Design your data models in Hasura
+3. **Add Real-time Features**: Implement GraphQL subscriptions
+4. **Upload Files**: Integrate file storage functionality
+5. **Create Functions**: Add custom serverless logic
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test locally
+5. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License.
