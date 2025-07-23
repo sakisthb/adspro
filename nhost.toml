@@ -8,4 +8,13 @@ code = "nhost/functions/default"
 
 [deploy]
 subdomain = "kxcevmeaguflcpdyxnsl"
-region = "eu-central-1" 
+region = "eu-central-1"
+
+[hasura]
+enabled = true
+
+[auth]
+enabled = true
+
+[storage]
+enabled = true 
